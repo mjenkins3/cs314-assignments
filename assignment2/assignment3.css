@@ -1,0 +1,186 @@
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('fonts/montserrat-extralight-webfont.eot');
+    src: url('fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-extralight-webfont.woff') format('woff'),
+         url('fonts/montserrat-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff'),
+         url('fonts/montserrat-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.eot');
+    src: url('fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff'),
+         url('fonts/montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url("reset.css");
+html{
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    position: relative;
+    font-family: 'montserratlight', sans-serif;
+    font-size: 45px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.header {
+    font-family: 'montserratlight', Sans-Serif;
+    font-size: 45px;
+    line-height: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation{
+    font-family: 'montserratextralight', Sans-Serif;
+    line-height: 15px;
+    text-align: right;
+    word-spacing: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.section1{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #b0e5d5;
+    padding: 10px;
+}
+
+.aboutHeader{
+    font-size: 30px;
+    font-family: 'montserratextralight', Sans-Serif;
+    line-height: 30px;
+    text-align: center;
+}
+
+.bodyContent{
+    font-size: 15px;
+    font-family: 'montserratextralight', Sans-Serif;
+    text-align: center;
+}
+
+.section2{
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    background-color: darkslategrey;
+    background-image: linear-gradient(rgb(7, 61, 61), rgb(166, 221, 218)); 
+    padding: 15px;
+}
+
+.photo-box{
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20%;
+}
+
+.footer{
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: #000033;
+    padding: 45px;
+}
+
+.btn{
+    width: 100px;
+    background-color: none;
+    border-color:white;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Helvetica, Tahoma, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.btn:active{
+    opacity: 1;
+    background-color: white;
+    color: rgb(78, 90, 56);
+}
+
+.copyright{
+    box-sizing: border-box;
+    width:100%;
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    font-size: 10px;
+    font-family: Helvetica, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.box{
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery{
+    background-color: rgb(214, 200, 166);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.gallery-box{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+
