@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('fonts/montserrat-extralight-webfont.eot');
+    src: url('fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-extralight-webfont.woff') format('woff'),
+         url('fonts/montserrat-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff'),
+         url('fonts/montserrat-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.eot');
+    src: url('fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff'),
+         url('fonts/montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    font-family: "montserratlight", Tahoma, sans-serif;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+}
+
+h1{
+    font-family: "montserratmedium", Tahoma, sans-serif;
+    font-size: 2.3em;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+p{
+    color: white
+}
+
+nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    /* background-color: black; */
+}
+
+nav a{
+    padding-left: 1.5em;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+i{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    /* transform: translateY(-50%); */
+}
+
+nav i{
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translateY(-50%);
+}
+
+.inner-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.middle-section{
+    position: relative;
+    height: 400px;
+    background-color: rgb(255, 160, 122);
+    text-align: center;
+}
+
+.center-content{
+    position: absolute;
+    top: 50%;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    width: 150px;
+    margin: 20px auto;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.btn-text{
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.6;
+    text-decoration: underline;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+section{
+    background-color: rgb(70, 107, 107);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.link-container{
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.link-container i{
+    position: relative;
+    /* font-size: 2em;
+    color: white; */
+    padding: 10px;
+}
