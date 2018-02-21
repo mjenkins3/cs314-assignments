@@ -71,6 +71,7 @@ nav a{
 
 nav a:hover{
     text-decoration: underline;
+    font-size: 1.2em;
 }
 
 
@@ -80,14 +81,18 @@ i{
     position: absolute;
     top: 35%;
     right: 0;
-    /* transform: translateY(-50%); */
 }
 
-nav i{
-    position: absolute;
+i:hover{
+    font-size: 2.5em;
+    color: lightcoral;
+}
+header i{
+    /* position: relative; */
     top: 50%;
-    left: 87%;
+    left: 85%;
     transform: translateY(-50%);
+    padding-right: 1.4em;
 }
 
 .inner-content{
@@ -96,6 +101,7 @@ nav i{
     position: relative;
     height: 100%;
 }
+
 
 .middle-section{
     position: relative;
@@ -142,6 +148,7 @@ section{
 
 .flex-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     width: 100%;
@@ -151,7 +158,6 @@ section{
     width: 20%;
     padding: 20px;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .link-container i{
@@ -159,4 +165,44 @@ section{
     /* font-size: 2em;
     color: white; */
     padding: 10px;
+}
+
+@media only screen and (min-width: 769px){
+    .middle-section{
+        width: 100%;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .inner-content{
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    }
+
+    .middle-section{
+        height: 650px;
+    }
+
+    .center-content p{
+        font-size: 20px;
+    }
+
+    .flex-container{
+        transform: none;
+        position: relative;
+    }
+
+    .link-container{
+        width: 100%;
+        padding: (5px 100px);
+    }
 }
