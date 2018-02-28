@@ -1,0 +1,174 @@
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('fonts/montserrat-extralight-webfont.eot');
+    src: url('fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-extralight-webfont.woff') format('woff'),
+         url('fonts/montserrat-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff'),
+         url('fonts/montserrat-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.eot');
+    src: url('fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff'),
+         url('fonts/montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-family: "montserratextralight", Tahoma, sans-serif;
+    color: midnightblue;
+}
+
+h1{
+    font-size: 2em;
+    font-family: "montserratmedium";
+}
+
+header{
+    background-color: rgb(245, 221, 143);
+    color: midnightblue;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+
+section{
+    padding: 2em;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+label{
+    display: block;
+    text-align: left;
+    padding: 1em 0 5px;
+}
+
+input, select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "montserratlight", Tahoma, sans-serif;
+    border: 2px midnightblue solid;
+    border-radius: 2px;
+    padding: 0.5em;
+    color: lightpink;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(110, 110, 192);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 2px rgb(226, 198, 104) solid;
+}
+
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+select{
+    padding: 0.5em;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin: 0 auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background-color: darkgray;
+    border-color: white;
+}
+
+
+.inner-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.radio-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.radio-container label{
+    display: inline;
+    text-align: center;
+}
+
+.radio-container input{
+    width: auto;
+}
+
+.radio-group{
+    display: inline-block;
+    width: 24%;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 10px;
+    padding-top: 2em;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 1.5em;
+    }
+
+    
+    .inner-content{
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    }
+
+    .radio-container label{
+        display: inline;
+        /* width: 48%; */
+        text-align: center;
+    }
+    .radio-group{
+        display: inline-block;
+        width: 48%;
+        margin: 0 auto;
+    }
+}
