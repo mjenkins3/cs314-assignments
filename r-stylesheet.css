@@ -31,56 +31,58 @@
 
 @font-face {
     font-family: 'rochesterregular';
-    src: url('rochester-regular-webfont.eot');
-    src: url('rochester-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('rochester-regular-webfont.woff2') format('woff2'),
-         url('rochester-regular-webfont.woff') format('woff');
+    src: url('fonts/rochester-regular-webfont.eot');
+    src: url('fonts/rochester-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rochester-regular-webfont.woff2') format('woff2'),
+         url('fonts/rochester-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 html{
-    font-family: "montserratextralight", tahoma, sans-serif;
-    color: white;
-    padding: 0;
+    padding:0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-h1{
-    font-size: 6em;
-    padding: 0;
-    margin: 0;
-    font-weight: 900;
+    background-color: rgb(78, 78, 44);
+    font-family: 'montserratextralight', helvetica, sans-serif;
 }
 
 header{
-    position: relative;
-    text-align: center;
-}
-
-
-p a{
-    color: white;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-p a:hover{
-    text-decoration: underline;
-    font-size: 1.2em;
-}
-
-
-.full-page-background{
+    background-color: white;
+    height: 85px;
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-image: url('photos/header.jpg');
-    background-size: cover;
-    background-position: center;
-    /* box-sizing: border-box; */
-    transform: translate(-8%,-15%);
+}
+
+nav{
+    position: absolute;
+    padding: 2px 0;
+}
+
+nav a{
+    padding-left: 1.5em;
+    color: midnightblue;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-family: 'montserratlight', helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'rochesterregular', serif;
+    font-size: 4em;
+    color: white;
+    margin:0;
+    padding: 0;
+}
+
+h4{
+    font-family: 'montserratlight', helvetica, sans-serif;
+    font-size: 1.4em;
+    color: white;
+    transform: translateX(-10%);
 }
 
 .inner-content{
@@ -90,9 +92,23 @@ p a:hover{
     height: 100%;
 }
 
-.header-box{
-    height: 250px;
-    margin-top: 20%;
+.top-section{
+    position: relative;
+    height: 150px;
     width: 100%;
-    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    transform: translate(-15%,-15%);
+}
+
+.center-content{
+    position: absolute;
+    width: 100%;
+}
+
+.middle-section{
+    position: relative;
+    background-color: rgb(58, 58, 58);
+    text-align: center;
+    height: 1000px;
 }
