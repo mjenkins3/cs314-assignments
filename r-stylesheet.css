@@ -44,8 +44,8 @@ html{
     margin: 0 auto;
     background-color: rgb(78, 78, 44);
     font-family: 'montserratextralight', helvetica, sans-serif;
+    
 }
-
 header{
     background-color: white;
     height: 85px;
@@ -133,10 +133,12 @@ i{
     margin: 0 auto;
 }
 
-i:hover{
-    color: rgb(165, 168, 172);
-    font-weight: 800;
+
+footer{
+    padding: 0;
+    margin: 0 auto;
 }
+
 
 .inner-content{
     max-width: 1024px;
@@ -168,8 +170,7 @@ i:hover{
     height: 1px;
     width: 100%;
     padding: 0;
-    margin: 30px auto;
-    border: 200px;
+    margin: 50px 0 auto;
     background-color: white;
 }
 
@@ -180,42 +181,16 @@ i:hover{
 }
 
 
-
-
 .middle-section{
+    box-sizing: border-box;
     position: relative;
     margin-top: 0;
     padding-top: 0;
     text-align: center;
-    height: 1000px;
+    display: block;
+    height: 1550px;
 }
 
-.flex-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around center;
-    position: relative;
-    width: 100%;
-    color: white;
-    padding: 0;
-}
-
-.flex-container a{
-    text-decoration: none;
-    padding: 0;
-    margin: 0 auto;
-    left: 50;
-    transform: translateX(-5%);
-}
-
-.flex-container a:visited{
-    text-decoration: none;
-    color: white;
-}
-
-.flex-container a:active{
-    color: rgb(68, 66, 66);
-}
 
 .PE{
     box-sizing: border-box;
@@ -229,5 +204,87 @@ i:hover{
     padding: 0 20px 0 0;
     margin: 5px 10px;
     text-align: left;
+    color: white;
+}
+
+.Ed{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 15px 0;
+    padding: 0 120px 0 0;
+}
+
+.Ed p{
+    font-size: .8em;
+    padding: 0 20px 0 0;
+    margin: 5px 10px;
+    text-align: left;
+    color: white;
+}
+
+.IE {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 15px 0;
+    padding: 0 120px 0 0;
+}
+
+.IE p{
+    font-size: .8em;
+    padding: 0 20px 0 0;
+    margin: 5px 10px;
+    text-align: left;
+    color: white;
+}
+
+.top-link{
+    position: relative;
+    color: white;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.top-link a{
+    text-decoration: none;
+    /* padding: 0;
+    margin: 0; */
+}
+.top-link i{
+    transition: all 0.4s ease;
+}
+.top-link i:hover{
+    color: rgb(165, 168, 172);
+}
+
+.top-link a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.top-link i:active{
+    color: rgb(68, 66, 66);
+}
+
+.footer-links{
+    color: white;
+    padding: 25px 0px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.footer-links a{
+    padding: 0 15px;
+    margin: 0 auto;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer-links a:hover{
+    color:rgb(165, 168, 172);
+}
+
+.footer-links a:visted{
     color: white;
 }
