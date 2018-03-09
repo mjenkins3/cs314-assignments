@@ -60,6 +60,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    color: midnightblue;
 }
 
 
@@ -171,4 +172,21 @@ input[type="submit"]:hover{
     color: white;
     background-color: darkgray;
     border-color: white;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        height: 50px;
+    }
+    
+    nav{
+        font-size: 10px;
+    }
+    
+    .inner-content{
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    }
 }

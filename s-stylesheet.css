@@ -137,3 +137,28 @@ footer{
     margin: 0;
 }
 
+
+@media only screen and (max-width: 768px){
+    header{
+        height: 50px;
+    }
+    
+    nav{
+        font-size: 10px;
+    }
+    .inner-content{
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    }
+   
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+    width: 50%;
+    }
+}
