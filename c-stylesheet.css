@@ -45,6 +45,7 @@ html{
     background-color: rgb(78, 78, 44);
     font-family: 'montserratextralight', helvetica, sans-serif;
     box-sizing: border-box;
+    color: white;
     
 }
 *, *:before, *:after {
@@ -108,32 +109,66 @@ footer{
     color: white;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0;
-  }
-
-.responsive-image {
-    max-width: 100%;
-}
-
-.cell {
-    width: 30%;
-    padding: 0;
-    margin: 0;
-}
-
-.cell img {
+label{
     display: block;
-}
-
-  
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0;
+    text-align: left;
+    padding: 1em 0 5px;
     margin: 0;
 }
 
+input, select, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inner-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.middle-section{
+    padding: 50px;
+}
+
+h1{
+    font-family: 'rochesterregular', serif;
+    font-size: 4.2em;
+    color: white;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+.btn{
+    padding: 10px;
+    padding-top: 2em;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin: 0 auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background-color: darkgray;
+    border-color: white;
+}
