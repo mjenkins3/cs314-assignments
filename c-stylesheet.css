@@ -77,6 +77,7 @@ nav a{
 nav a:hover{
     text-decoration: underline;
     font-family: 'montserratlight', helvetica, sans-serif;
+    cursor: pointer;
 }
 
 
@@ -104,6 +105,7 @@ footer{
 
 .footer-links a:hover{
     color:rgb(165, 168, 172);
+    cursor: pointer;
 }
 
 .footer-links a:visted{
@@ -126,6 +128,7 @@ input, select, textarea{
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 
 .inner-content{
     max-width: 1024px;
@@ -184,9 +187,18 @@ input[type="submit"]:hover{
     }
     
     .inner-content{
-        max-width: 768px;
+        padding: 0;
         margin: 0 auto;
         position: relative;
         height: 100%;
+    }
+
+    .middle-section{
+        padding: 0;
+        margin: 0;
+    }
+
+    label, input, select, textarea{
+        font-size: 10px;
     }
 }

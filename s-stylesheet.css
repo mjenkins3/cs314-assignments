@@ -75,6 +75,7 @@ nav a{
 nav a:hover{
     text-decoration: underline;
     font-family: 'montserratlight', helvetica, sans-serif;
+    cursor: pointer;
 }
 
 
@@ -102,6 +103,7 @@ footer{
 
 .footer-links a:hover{
     color:rgb(165, 168, 172);
+    cursor: pointer;
 }
 
 .footer-links a:visted{
@@ -160,5 +162,11 @@ footer{
     }
     .cell {
     width: 50%;
+    }
+}
+
+@media only screen and (max-width:620px){
+    .cell{
+        width: 100%;
     }
 }

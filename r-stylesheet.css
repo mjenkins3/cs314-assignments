@@ -265,6 +265,7 @@ footer{
 }
 .top-link i:hover{
     color: rgb(165, 168, 172);
+    cursor: pointer;
 }
 
 .top-link a:visited{
@@ -298,6 +299,7 @@ footer{
 
 .footer-links a:hover{
     color:rgb(165, 168, 172);
+    cursor: pointer;
 }
 
 .footer-links a:visted{
@@ -325,7 +327,7 @@ footer{
     }
     
     .inner-content{
-        max-width: 768px;
+        padding: 0;
         margin: 0 auto;
         position: relative;
         height: 100%;
@@ -374,4 +376,45 @@ footer{
     .line{
         height:0px;
     }
+
+    @media only screen and (max-width: 440px){
+        .middle-section{
+            height: 2000px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .inner-content{
+            padding: 0;
+            margin: 0;
+        }
+
+        html{
+            padding:0;
+            margin:0;
+        }
+
+        h1{
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        h2{
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+        }
+        h3,h4,h5{
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+        }
+        h4{
+            color: black;
+        }
+        .PE p, .Ed p, .IE p{
+            font-size:8px;
+            padding: 0;
+            margin: 0;
+        }
 }

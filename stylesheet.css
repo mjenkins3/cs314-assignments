@@ -59,12 +59,12 @@ header{
     text-align: center;
 }
 
-p{
+nav{
     margin: 18px;;
     padding: 0;
 }
 
-p a{
+nav a{
     color: white;
     font-size: 1.8em;
     font-weight: 100;
@@ -74,7 +74,7 @@ p a{
     margin: 0;
 }
 
-p a:hover{
+nav a:hover{
     text-decoration: underline;
     font-size: 2.2em;
     font-weight: 800;
@@ -108,29 +108,41 @@ p a:hover{
 
 
 @media only screen and (max-width: 890px){
-    p a{
+    nav a{
         font-size: 18px;
+    }
+
+    .full-page-background{
+        transform: translate(-16%,-15%);
     }
 }
 
 @media only screen and (max-width: 730px){
-    p a{
+    nav a{
         font-size: 15px;
     }
 }
 
 @media only screen and (max-width: 680px){
-    p a{
+    nav a{
         font-size: 15px;
         padding: 0;
     }
 }
 
 @media only screen and (max-width: 540px){
-    p a{
+    nav a{
         font-size: 12px;
         padding: 0;
         color:none;
         text-decoration: underline;
     }
+
+    .full-page-background{
+        transform: translate(-26%,-15%);
+    }
+
+    /* nav{
+        padding
+    } */
 }
