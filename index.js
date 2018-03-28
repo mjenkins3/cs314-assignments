@@ -1,28 +1,30 @@
 // Create a function that asks for a true/false from the user ( confirm() ) and handles the
 // answer from the user with an if/else statement.
-var msg;
+
 function displayJoke() {
-    var joke = confirm("Press 'OK' if you would like to read a joke. \nOtherwise press 'Cancel'.");
+    let joke = confirm("Press 'OK' if you would like to read a joke. \nOtherwise press 'Cancel'.");
     if (joke == true){
        msg = "What did the grape say when it was stepped on? Nothing, it just let out a little wine.";
     } else {
         msg = "Ok. No jokes for you.";
     }
+    console.log(msg);
 }
 
 displayJoke();
-console.log(msg);
+
 
 // Now rewrite that function (but keep that original function in your code) and use a ternary
 // operator instead of an if/else statement
-var msg2;
+
 function displayJoke2() {
-    var joke = confirm("Press 'OK' if you would like to read a joke. \nOtherwise press 'Cancel'.");
-    msg2 = joke ? "I'm thinking of reasons to go to Switzerland. The flag is a big plus." : "Ok. No jokes for you";
+    let joke = confirm("Press 'OK' if you would like to read a joke. \nOtherwise press 'Cancel'.");
+    let msg2 = joke ? "I'm thinking of reasons to go to Switzerland. The flag is a big plus." : "Ok. No jokes for you";
+    console.log(msg2);
 }
 
 displayJoke2();
-console.log(msg2);
+
 
 // Create a function that asks a user for a NUMBER input ( prompt() ) and handle the users
 // response with an alert based on what they type. You should handle the cases of nothing
@@ -30,7 +32,7 @@ console.log(msg2);
 // entered. With each case, a different alert() message should be shown to the user.
 
 
-var num;
+let num;
 function favNumber(){
     num = prompt("Please enter your favorite number", "1234");
     while (isNaN(num) ||num == '') {
@@ -57,8 +59,8 @@ console.log(num);
 // key-value pairs. One of the key-value pairs must be a function that references another
 // key in that object
 
-var firstName;
-var lastName;
+let firstName;
+let lastName;
 function getUserInfo(){
     firstName = prompt("Please enter your first name:", "Mary");
     while (isNaN(firstName) == false && firstName != null || firstName == ''){
@@ -97,7 +99,7 @@ function User(first, last, favNum){
     this.num = favNum;
 }
 
-var currentUser = new User(firstName, lastName, num);
+let currentUser = new User(firstName, lastName, num);
 function displayInfo(){
     if (firstName == null && lastName == null && num == null){
         console.log("I learned you do not have a first or last name or a favorite number. Are you really a human?");
@@ -125,7 +127,7 @@ displayInfo();
 // additional key-value pair to the object. There are multiple ways you could do this, so
 // interpret it in a way that makes sense to you.
 
-var clone;
+let clone;
 function cloneUser() {
     clone = {};
     for (let key in currentUser){
@@ -160,7 +162,7 @@ cloneUser();
 
 // // Now comment out the above, and rewrite the function as a function expression.
 
-// var combinedStrings = function combineStrings(name, favNum, birthPlace='Planet Earth') {
+// let combinedStrings = function combineStrings(name, favNum, birthPlace='Planet Earth') {
 //     console.log("Name: " + name + ", Favorite Number: " + favNum + ", Birth Place: " + birthPlace);
 // }
 
@@ -171,7 +173,7 @@ cloneUser();
 // function. Make this arrow function as short as possible.
 
 
-var combineStrings = (name, favNum, birthPlace='Planet Earth') => {
+let combineStrings = (name, favNum, birthPlace='Planet Earth') => {
     console.log("Name: " + name + ", Favorite Number: " + favNum + ", Birth Place: " + birthPlace);
 }
 
