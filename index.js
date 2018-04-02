@@ -1,181 +1,138 @@
-// Create a function that asks for a true/false from the user ( confirm() ) and handles the
-// answer from the user with an if/else statement.
+// global functions
 
-function displayJoke() {
-    let joke = confirm("Press 'OK' if you would like to read a joke. \nOtherwise press 'Cancel'.");
-    if (joke == true){
-       msg = "What did the grape say when it was stepped on? Nothing, it just let out a little wine.";
+
+
+// 1. Char Swap - Write a JavaScript function to create a new string from an input string from
+// the user swapping the position of first and last characters. The string length entered by
+// the user must be greater than or equal to 1.
+
+
+let userString;
+function charSwapPrompt(){
+    userString = prompt("What is your favorite movie?", "The Martian");
+    while (userString.length < 1 || userString == ' ') {
+        alert("The title of your movie was not long enough.");
+        userString = prompt("What is your favorite movie?", "The Martian");
+    }
+    if (userString == null){
+        alert("You pressed cancel. We will assume you do not have a favorite movie.");
+    } else{
+        let swappedString = charSwap(userString);
+        console.log("Your favorite movie with the first and last characters switched is:  \n", swappedString);
+    }
+}
+
+function charSwap(string) {
+   let newFirst = string.slice(userString.length-1);
+   let newLast = string.slice(0,1);
+   let restString = string.slice(1,userString.length-1);
+   let swappedString = newFirst.concat(restString, newLast);
+   return swappedString;
+}
+
+charSwapPrompt();
+
+// 2. Hi String - Write a JavaScript function that asks for a string from the user and returns a
+// new string adding "Hi" in front of the input string. If the input string begins with "Hi" then
+// return the original string. The string length entered by the user must be greater than or
+// equal to 1.
+
+function hiString(){
+    userString = prompt("What is your full name?", "Mary Jenkins");
+    while (userString.length < 1 || userString == ' ') {
+        alert("Your input was not long enough.");
+        userString = prompt("What is your full name?", "Mary Jenkins");
+    }
+    if (userString == null){
+        alert("You pressed cancel. We will assume you do not have a favorite movie.");
+    } else if (userString.startsWith('Hi')){
+        console.log(userString);
     } else {
-        msg = "Ok. No jokes for you.";
+        console.log('Hi ' + userString);
     }
-    console.log(msg);
 }
 
-displayJoke();
+hiString();
 
 
-// Now rewrite that function (but keep that original function in your code) and use a ternary
-// operator instead of an if/else statement
+// 3. Three Chars to Front - Write a JavaScript function to create a new string from an input
+// string taking the last 3 characters and adding them to the front of the string. The string
+// length entered by the user must be at least 3 characters long.
 
-function displayJoke2() {
-    let joke = confirm("Press 'OK' if you would like to read a joke. \nOtherwise press 'Cancel'.");
-    let msg2 = joke ? "I'm thinking of reasons to go to Switzerland. The flag is a big plus." : "Ok. No jokes for you";
-    console.log(msg2);
-}
-
-displayJoke2();
-
-
-// Create a function that asks a user for a NUMBER input ( prompt() ) and handle the users
-// response with an alert based on what they type. You should handle the cases of nothing
-// being entered, ‘cancel’ being selected, and something other than a number being
-// entered. With each case, a different alert() message should be shown to the user.
-
-
-let num;
-function favNumber(){
-    num = prompt("Please enter your favorite number", "1234");
-    while (isNaN(num) ||num == '') {
-        if (isNaN(num)) {
-            alert("That's not a number...");
-        } else if (num == '') {
-    	    alert("You didn't enter anything!");
+function threeChars(){
+    userString = prompt("Enter a number that is at least 3 digits long", "12345");
+    while (userString.length < 3 || userString == ' ' || isNaN(userString)) {
+        if (isNaN(userString)){
+            alert("That wasn't a number. Try again.");
+        } else{
+            alert("Your input was not long enough. Try again.");
         }
-        num = prompt("Please enter your favorite number", "1234");
-    }
-    if (num == null){
+        userString = prompt("Enter a number that is at least 3 digits long", "12345");
+    } 
+    if (userString == null){
         alert("You pressed cancel. We will assume you do not have a favorite number.");
-    } else{
-        console.log("So your favorite number is " + num + "? Interesting...");
-    }
-    
-    
-}
-
-favNumber();
-console.log(num);
-
-// You will create a constructor function that constructs an object that contains at least 3
-// key-value pairs. One of the key-value pairs must be a function that references another
-// key in that object
-
-let firstName;
-let lastName;
-function getUserInfo(){
-    firstName = prompt("Please enter your first name:", "Mary");
-    while (isNaN(firstName) == false && firstName != null || firstName == ''){
-        if (isNaN(firstName) == false) {
-            alert("That's a number not a name!");
-        } else if (firstName == '') {
-    	    alert("You didn't enter anything!");
-        }
-        firstName = prompt("Please enter your first name:", "Mary");
-    }
-    if (firstName == null){
-        alert("You pressed cancel. We will assume you do not have a first name.");
-    }
-    lastName = prompt("please enter your last name:", "Jenkins");
-    while (isNaN(lastName) == false && lastName != null || lastName == ''){
-        if (isNaN(lastName) == false) {
-            alert("That's a number not a name!");
-        } else if (lastName == '') {
-    	    alert("You didn't enter anything!");
-        }
-        lastName = prompt("Please enter your last name:", "Jenkins");
-    }
-    if (lastName == null){
-        alert("You pressed cancel. We will assume you do not have a last name.");
+    } else {
+        let length = userString.length;
+        let newFirst = userString.slice(length-3, length);
+        userString = userString.slice(0, length-3);
+        let newString = newFirst.concat(userString);
+        console.log("Your number with the last three digits at the front is: " + newString);
     }
 }
 
-getUserInfo();
-console.log(firstName);
-console.log(typeof firstName);
-console.log(lastName);
+threeChars();
 
-function User(first, last, favNum){
-    this.firstName = first;
-    this.lastName = last;
-    this.num = favNum;
-}
+// 4. Strings to Sentence - Write a JavaScript function that asks for a list of items from the
+// user separated by commas. Convert this to an array without the commas or extra
+// spaces. Alert the items back to the user with a single saying that is formed using
+// backticks (``).
 
-let currentUser = new User(firstName, lastName, num);
-function displayInfo(){
-    if (firstName == null && lastName == null && num == null){
-        console.log("I learned you do not have a first or last name or a favorite number. Are you really a human?");
-    } else if (firstName == null && lastName == null){
-        console.log("I learned you do not have a first or last name. Your favorite number is: " + currentUser.num);
-    } else if (firstName == null && num == null){
-        console.log("I learned you do not have a first name or a favorite number. Your last name is: " + currentUser.lastName);
-    } else if (lastName == null && num == null){
-        console.log("I learned you do not have a last name or a favorite number. Your first name is: " + currentUser.firstName);
-    } else if (firstName == null){
-        console.log("I learned you do not have a first name. Your last name is: " + currentUser.lastName + ". Your favorite number is: " + currentUser.num);
-    } else if (lastName == null){
-        console.log("I learned you do not have a last name. Your first name is: " + currentUser.first + ". Your favorite number is: " + currentUser.num);
-    } else if (num == null) {
-        console.log("I learned you do not have a favorite number. Your name is: " + currentUser.firstName + + currentUser.lastName);
-    } else{
-        console.log("I learned that your name is: " + currentUser.firstName + " " + currentUser.lastName + ". Your favorite number is: " + currentUser.num);
+function stringToSentence(){
+    userString = prompt("Enter your favorite color, animal, and sport separated by commas. \n Ex: yellow, sloth, baseball", "yellow, sloth, baseball");
+    let numCommas = userString.split(',').length-1;
+    while (numCommas != 2){
+        alert("You didn't have the right number of items in your list. Make sure there are three items separated by commas. Try again.");
+        userString = prompt("Enter your favorite color, animal, and sport separated by commas. \n Ex: yellow, sloth, baseball", "yellow, sloth, baseball");
+        numCommas = userString.split(',').length-1;
     }
+    userString = userString.toLowerCase();
+    let listArr = separateList(userString, 3);
+    console.log("Your favorite color is " + listArr[0] + ". That's a great color, and a " + listArr[1] + " is a pretty cool animal! I like to watch " + listArr[2] + " on lazy Sundays!");
 }
 
-displayInfo();
-
-
-// You will create a function that makes a copy of an object and has the option of adding an
-// additional key-value pair to the object. There are multiple ways you could do this, so
-// interpret it in a way that makes sense to you.
-
-let clone;
-function cloneUser() {
-    clone = {};
-    for (let key in currentUser){
-        clone[key] = currentUser[key];
+function separateList(list, numItems){
+    let itemArr = [];
+    for(let i = 0; i < numItems-1; i++){
+        let lengthItem = list.indexOf(',')+1;
+        itemArr[i] = list.slice(0,lengthItem-1);
+        list = list.slice(lengthItem+1, list.length);
+        // console.log(itemArr[i]);
+        // console.log(list);
     }
+    itemArr[numItems-1] = list;
+    // console.log(itemArr);
+    return itemArr;
+}
 
-    
 
-    let birthPlace = prompt("Please enter your birth place", "Colorado");
-    if (birthPlace !== null){
-        let from = {birthplace: birthPlace};
-        Object.assign(clone, from); 
+stringToSentence();
+
+// 5. Upper or Lower - Write a JavaScript function that asks for a string from the user and
+//creates a new string from that string where the first 3 characters are lowercase. If the
+// string length entered by the user is less than 3 convert all the characters in upper case.
+
+function upperLower(){
+    userString = prompt("What is your favorite song?", "I've Just Seen a Face");
+    if (userString.length >= 3){
+        newString = userString.slice(0,3).toLowerCase();
+        userString = userString.slice(3, userString.length);
+        newString = newString.concat(userString);
+    } else {
+        newString = userString.toLowerCase();
     }
-
-    
-    console.log("Clone: ", clone);
+    console.log("Here is your favorite song with the first three characters in lowercase: " + newString);
 }
 
-
-cloneUser();
-
-// // // Create a function declaration that takes 2 strings and has an optional 3rd string
-// // // parameter. If there is no 3rd parameter, provide a default. This function will return a
-// // // single string incorporating these 3 parameters
-
-// function combineStrings(name, favNum, birthPlace='Planet Earth'){
-//     console.log("Name: " + name + ", Favorite Number: " + favNum + ", Birth Place: " + birthPlace);
-// }
-
-// combineStrings(currentUser.firstName, currentUser.num, currentUser.birthplace);
-// combineStrings(clone.firstName, clone.num, clone.birthplace);
-
-// // Now comment out the above, and rewrite the function as a function expression.
-
-// let combinedStrings = function combineStrings(name, favNum, birthPlace='Planet Earth') {
-//     console.log("Name: " + name + ", Favorite Number: " + favNum + ", Birth Place: " + birthPlace);
-// }
-
-// combinedStrings(currentUser.firstName, currentUser.num, currentUser.birthplace);
-// combinedStrings(clone.firstName, clone.num, clone.birthplace);
-
-// Now comment out the above, and rewrite the function expression using an arrow
-// function. Make this arrow function as short as possible.
+upperLower();
 
 
-let combineStrings = (name, favNum, birthPlace='Planet Earth') => {
-    console.log("Name: " + name + ", Favorite Number: " + favNum + ", Birth Place: " + birthPlace);
-}
-
-combineStrings(currentUser.firstName, currentUser.num, currentUser.birthplace);
-combineStrings(clone.firstName, clone.num, clone.birthplace);
