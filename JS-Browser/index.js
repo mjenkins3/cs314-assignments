@@ -9,7 +9,7 @@ let scrollFour = document.getElementById('buttonFour');
 let scrollFive = document.getElementById('buttonFive');
 
 function scroll(location) {
-    setTimeout(() => {document.getElementById(location).scrollIntoView(true)}, 200);
+    setTimeout(() => {document.getElementById(location).scrollIntoView({ block: 'start',  behavior: 'smooth' })});
 }
 
 scrollOne.onclick = function() {scroll('one')};
@@ -26,6 +26,7 @@ let greenBackground = document.getElementById('greenButton');
 
 function changeBackground(color) {
     document.getElementById("one").style.backgroundColor = color;
+    document.getElementById("one").style.color = 'white';
 }
 
 blueBackground.onclick = function() {changeBackground('blue')};
@@ -40,12 +41,12 @@ pinkButton.onclick = function() {changeButton(pinkButton)};
 function changeButton(button){
     if (button.innerText=="Click for pink!") {
         button.innerText = "Click for orange!";
-        document.getElementById('pinkButton').style.color = 'orange';
-        document.getElementById("two").style.backgroundColor = 'pink';
+        document.getElementById('pinkButton').style.color = '#f2a848';
+        document.getElementById("two").style.backgroundColor = '#f98a84';
     } else {
         button.innerText = "Click for pink!";
-        document.getElementById('pinkButton').style.color = 'pink';
-        document.getElementById("two").style.backgroundColor = 'orange';
+        document.getElementById('pinkButton').style.color = '#f98a84';
+        document.getElementById("two").style.backgroundColor = '#f2a848';
     }
 }
 
@@ -90,7 +91,7 @@ let highlightList = document.querySelectorAll('#highlightList li');
 // let itemFour = document.getElementById('itemFour');
 
 function highlight(itemId) {
-    document.getElementById(itemId).style.background = 'teal';
+    document.getElementById(itemId).style.background = '#a6f4df';
     
 }
 
@@ -98,12 +99,14 @@ function highlight(itemId) {
 for (let i=0; i < highlightList.length; i++){
     highlightList[i].onclick = function() {
         deselect(highlightList);
-        document.getElementById(highlightList[i].id).style.background = 'teal';
+        document.getElementById(highlightList[i].id).style.background = '#a6f4df';
+        document.getElementById(highlightList[i].id).style.color = '#7f8784';
     }
 }
 
 function deselect(list){
     for (let i=0; i < list.length; i++){
         document.getElementById(list[i].id).style.background = 'none';
+        document.getElementById(list[i].id).style.color = 'black';
     } 
 }
