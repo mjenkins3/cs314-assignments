@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('fonts/montserrat-extralight-webfont.eot');
+    src: url('fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-extralight-webfont.woff') format('woff'),
+         url('fonts/montserrat-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff'),
+         url('fonts/montserrat-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.eot');
+    src: url('fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff'),
+         url('fonts/montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rochesterregular';
+    src: url('fonts/rochester-regular-webfont.eot');
+    src: url('fonts/rochester-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rochester-regular-webfont.woff2') format('woff2'),
+         url('fonts/rochester-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-family: "montserratextralight", tahoma, sans-serif;
+    color: white;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: rgb(32, 22, 71);
+    padding: 35px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'montserratlight', tahoma, sans-serif;
+    color: white;
+}
+
+h3 {
+    font-family: 'montserratlight', tahoma, sans-serif;
+    color: rgb(32, 22, 71);
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: 'rochesterregular', serif;
+    color: rgb(127, 197, 232);
+    font-size: 2.7em;
+    padding-bottom: 4px;
+    letter-spacing: 2px;
+}
+
+p {
+    color: rgb(32, 22, 71);
+}
+
+
+i{
+    padding: 0px 10px 0px 0px;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    background-color: rgb(32, 22, 71);
+    padding: 25px;
+}
+
+footer p{
+    color: white;
+}
+
+
+.user-container{
+    border: 2px solid rgba(40, 41, 40, 0.594);
+    background: rgba(128, 128, 128, 0.443);
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.inner-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+button{
+    font-family: "montserratmedium", tahoma, sans-serif;
+    border: 0.5px solid rgba(40, 41, 40, 0.594);
+    background: rgba(0, 0, 0, 0.464);
+    color:white;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.outer-todo-container{
+    border: 0.5px solid black;
+    background: rgba(42, 42, 42, 0.587);
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.todo-container p{
+    color: white;
+    padding: 15px;
+}
+
+
+.outer-album-container{
+    border: 0.5px solid black;
+    background: rgba(42, 42, 42, 0.587);
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.outer-album-container p{
+    color: white;
+    padding: 15px;
+}
+
+.todo-done{
+    color: green;
+}
