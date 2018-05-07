@@ -1,4 +1,4 @@
-<!DOCTYPE html>s
+<!DOCTYPE html>
 <html>
   <head>
       <meta charset="utf-8">
@@ -10,8 +10,9 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body>
+      <button onclick="topFunction()" id="top-btn" title="Go to top">Back to top!</button>
       <div class='bg'></div>
-      <header>
+      <header id='header'>
           <nav>
               <a href="home.html">Home</a> 
               <a href="form.html">Form</a> 
@@ -26,20 +27,101 @@
             <h1 id="heading"></h1>
         </div>
         <div class='options-container'>
-            <h2>Where would you like to go?</h2>
-            <p id='scrollLink' style="display:inline">Photo Gallery</p>
-            <a href='form.html'>Contact</a>
-            <a href='map.html'>Map</a>
-            <a href='api.html'>Trivia</a>
+            <h2>What would you like to see?</h2>
+            <a href='#ire' id='scrollLink'>Study Abroad</a>
+            <a href='#Spo' id='scrollLink2'>Gonzaga</a>
+            <a href='#fam' id='scrollLink3'>Family</a>
+
         </div>
       </section>
-      <section class='photo-gallery'>
-          <p> text 4 now</p>
-      </section>
-      
+      <section id='photo-gallery'>
+        <h1 id='ire'> Maynooth, Ireland</h1>
+        <div class="row">
+            <div class="column">
+                <img src="photos/bog.jpg"style="width:100%">
+                <img src="photos/leinsterhouse.jpg"style="width:100%">
+                <img src="photos/bray.jpg"style="width:100%">
+                <img src="photos/tara.jpg"style="width:100%">
+                <img src="photos/blarney.jpg"style="width:100%">
+                <img src="photos/bray2.jpg"style="width:100%">
+                <img src="photos/bray3.jpg"style="width:100%">
+                <img src="photos/bray4.jpg"style="width:100%">
+                <img src="photos/brazen.jpg"style="width:100%">
+            </div>
+            <div class="column">
+                <img src="photos/cliffs.jpg" style="width:100%">
+                <img src="photos/cliffs2.jpg" style="width:100%">
+                <img src="photos/conemara.jpg" style="width:100%">
+                <img src="photos/conemara2.jpg" style="width:100%">
+                <img src="photos/doorway.jpg" style="width:100%">
+                <img src="photos/dublincastle.jpg" style="width:100%">
+                <img src="photos/eddie.jpg" style="width:100%">
+                <img src="photos/galway.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="photos/galwaybridge.jpg" style="width:100%">
+                <img src="photos/galwayrocks.jpg" style="width:100%">
+                <img src="photos/guiness.jpg" style="width:100%">
+                <img src="photos/guiness2.jpg" style="width:100%">
+                <img src="photos/header.jpg" style="width:100%">
+                <img src="photos/howth.jpg" style="width:100%">
+                <img src="photos/london.jpg" style="width:100%">
+                <img src="photos/maynooth.jpg" style="width:100%">
+                <img src="photos/william.jpg" style="width:100%">
+                <img src="photos/galway2.jpg" style="width:100%">
+            </div>
+        </div>
+        <h1 id='Spo'> Spokane, WA</h1>
+        <div class="row">
+            <div class="column">
+                <img src="photos/ball.jpg"style="width:100%">
+                <img src="photos/sd.jpg"style="width:100%">
+                <img src="photos/vegas.jpg"style="width:100%">
+                <img src="photos/hoopfest.jpg"style="width:100%">
+                <img src="photos/supergroup.jpg"style="width:100%">
+            </div>
+            <div class="column">
+                <img src="photos/bozarth.jpg" style="width:100%">
+                <img src="photos/bulldog.jpg" style="width:100%">
+                <img src="photos/clcxmas.jpg" style="width:100%">
+                <img src="photos/mel.jpg" style="width:100%">
+                <img src="photos/die.jpg" style='width:100%'>
     
-
-     
+            </div>
+            <div class="column">
+                <img src="photos/champ.jpg" style="width:100%">
+                <img src="photos/soccer.jpg" style="width:100%">
+                <img src="photos/finalfour.jpg" style="width:100%">
+                <img src="photos/juju.jpg" style="width:100%">
+                <img src="photos/friendsgiving.jpg" style="width:100%">
+                <img src="photos/fbal.jpg"style="width:100%">
+            </div>
+        </div>
+        <h1 id='fam'> Seattle, WA </h1>
+        <div class="row">
+            <div class="column">
+                <img src="photos/charlie.jpg" style="width:100%">
+                <img src="photos/babyphoto-matt.jpg"style="width:100%">
+                <img src="photos/bday.jpg"style="width:100%">
+                <img src="photos/rincon.jpg"style="width:100%">
+                <img src="photos/msgame.jpg"style="width:100%">
+            </div>
+            <div class="column">
+                <img src="photos/gram.jpg" style="width:100%">
+                <img src="photos/shower.jpg" style="width:100%">
+                <img src="photos/luna.jpg" style="width:100%">
+                <img src="photos/anthonys.jpg"style="width:100%">
+            </div>
+            <div class="column">
+                <img src="photos/steps.jpg" style="width:100%">
+                <img src="photos/nutcracker.jpg" style="width:100%">
+                <img src="photos/funnel cake.jp" style="width:100%">
+                <img src="photos/nutcracker-dad.jpg" style='width:100%'>
+                <img src="photos/summercamp.jpg"style="width:100%">
+                <img src="photos/boo.jpg" style="width:100%">
+            </div>
+        </div>
+      </section> 
       <script src = "home.js"></script>
   </body>
 </html>

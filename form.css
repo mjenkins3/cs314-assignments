@@ -219,3 +219,23 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+@media screen and (max-width: 546px) {
+    #jicon {
+        top: 50px;
+    }
+
+    #jenks {
+        top: 92px;
+    }
+
+    nav {
+        max-width: 100px;
+    }
+
+    nav a{
+        font-size: 1em;
+        padding: 10px;
+    }
+}

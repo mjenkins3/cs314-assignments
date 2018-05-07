@@ -48,7 +48,7 @@ Grey 4d5359 rgb(77, 83, 89)*/
     font-style: normal;
 }
 
-html, body {
+html{
     font-family: 'montserratextralight', helvetica, sans-serif;
     padding: 0;
     margin: 0 auto;
@@ -131,7 +131,7 @@ h1 {
 h2 {
     font-size: 2em;
     color: white;
-    padding: 19px;
+    padding: 15px;
 }
 
 .heading-container {
@@ -144,7 +144,7 @@ h2 {
   }
 
 .options-container {
-    position: relative;
+    position: absolute;
     background-color: rgba(77, 83, 89,0.5);
     top: 40%;
     left: 50%;
@@ -153,7 +153,12 @@ h2 {
     padding: 10px;
     border: 2px solid white;
     border-radius: 5px;
-    width: 60%;
+    width: 45%;
+    margin: 35px auto;
+}
+
+.options-container a{
+    padding: 15px;
 }
 
 .main {
@@ -162,18 +167,23 @@ h2 {
     height: 100%;
 }
 
-.photo-gallery {
+#photo-gallery {
     position: absolute;
     width: 100%;
-    top: 95%;
+    top: 860%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin: 0;
-    width: 50%;
+    margin: auto;
+    margin-bottom: 60px;
 }
 
-#scrollLink {
+#photo-gallery h2{
+    color: #191d32;
+    padding: 50px;
+}
+
+.options-container a{
     color: white;
     text-decoration: none;
     font-size: 1.4em;
@@ -188,4 +198,94 @@ h2 {
 #scrollLink:clicked {
     color: white;
     text-decoration: none;
+}
+
+img {
+    border: 10px solid white;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 155px;
+    /* border: 3px solid pink; */
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 28%;
+    padding: 0 4px;
+    margin: 10px auto;
+    /* border: 3px solid blue; */
+
+  }
+
+  .column img {
+    margin: 0 auto;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  #top-btn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    background-color: rgba(77, 83, 89,0.7); 
+    border: 2px solid white;
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 7px; 
+    font-size: 18px; 
+}
+
+#top-btn:hover {
+    background-color: rgb(109, 59, 71); /* Add a dark-grey background on hover */
+}
+
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1035px) {
+    h2 {
+        font-size: 1.3em;
+    }
+    .options-container a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    #jicon {
+        top: 50px;
+    }
+
+    #jenks {
+        top: 92px;
+    }
+
+    nav {
+        max-width: 100px;
+    }
+
+    nav a{
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 398px) {
+   h1{
+       font-size: 1.8em;
+   }
 }
