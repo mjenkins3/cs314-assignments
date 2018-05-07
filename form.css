@@ -1,0 +1,221 @@
+/*  COLOR SCHEME
+Dark navy 191d32 rgb(25, 29, 50)
+Indigo 282f44 rgb(40, 47, 68);
+Bright Teal d0fef5 rgb(208, 254, 245)
+Maroon 6d3b47 rgb(109, 59, 71)
+Grey 4d5359 rgb(77, 83, 89)*/
+
+
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('fonts/montserrat-extralight-webfont.eot');
+    src: url('fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-extralight-webfont.woff') format('woff'),
+         url('fonts/montserrat-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff'),
+         url('fonts/montserrat-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.eot');
+    src: url('fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff'),
+         url('fonts/montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rochesterregular';
+    src: url('fonts/rochester-regular-webfont.eot');
+    src: url('fonts/rochester-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rochester-regular-webfont.woff2') format('woff2'),
+         url('fonts/rochester-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'montserratextralight', helvetica, sans-serif;
+    padding: 0;
+}
+
+header {
+    position: relative; 
+    background-color: rgb(77, 83, 89);
+    padding: 42px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 20px;
+}
+a:hover {
+    color: rgb(208, 254, 245);
+    text-decoration: underline;
+}
+
+a:clicked {
+    color: white;
+    text-decoration: none;
+}
+
+#jicon {
+    font-size: 2.4em;
+    color: white;
+    font-weight: 200;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    padding: 0;
+}
+
+#jicon:hover {
+    color: rgb(208, 254, 245);
+}
+ 
+#jenks {
+    font-family: 'rochesterregular', serif;
+    position: absolute;
+    right: 60px;
+    top: 70px;
+    color: white;
+}
+
+
+label{
+    font-family: 'montserratmedium',sans-serif;
+    display: block;
+    text-align: left;
+    padding: 1em 0 5px;
+    margin: 0;
+    color: rgb(25, 29, 50);
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(25, 29, 50);
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.inner-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.middle-section{
+    padding: 50px;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+.btn{
+    padding: 10px;
+    padding-top: 2em;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin: 0 auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    color: rgb(77, 83, 89);
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background-color: rgb(77, 83, 89);
+    border-color: white;
+}
+
+.error {
+    font-size: 14px;
+    font-family: 'montserratmedium';
+    color: rgb(109, 59, 71);
+}
+
+/* input:focus{
+    border: 4px solid rgb(109, 59, 71);
+}
+
+textarea:focus{
+    border: 4px solid rgb(109, 59, 71);
+} */
+
+h4{
+    font-size: 20px;
+    font-family: 'montserratmedium';
+    color: rgb(40, 47, 68);
+    text-decoration: underline;
+}
+
+h1{
+    font-family: 'rochesterregular', serif;
+    font-size: 4.2em;
+    color: rgb(40, 47, 68);
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+.input-container{
+    background-color:  lightgray;
+    border: 2px solid rgb(25, 29, 50);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+}
+
+.input-container p {
+    color: rgb(40, 47, 68);
+    padding: 5px;
+}
+
+.bg { 
+    background-image: url('photos/galwaybridge.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

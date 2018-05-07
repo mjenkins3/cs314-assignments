@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map of San Francisco</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="map.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    </head>
+  <body>
+      <header>
+          <nav>
+            <a href="home.html">Home</a> 
+            <a href="form.html">Form</a> 
+            <a href="map.html">Map</a>
+            <a href="api.html">Trivia</a>
+            <a href="home.html" id='jicon'><i class="fab fa-jenkins" id='logo'> </i> </a>
+            <p id='jenks'> Jenkins </p>
+          </nav>
+        </header>
+        <div id="map"></div>
+        <section class='inner-content'>
+            <h3>More about the markers:</h3>
+            <h5>MWWPR </h5> <p>This is where I will be working starting this June!</p>
+            <h5>Marina District</h5> <p>This is where I plan on living with my roommate Kim.</p>
+            <h5>Super Duper Burgers </h5> <p>This is one of my favorite burger places in San Francisco.</p>
+        </section>
+        <script src="map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKamQxnIGE7OkZv6sZAuIan4B-KmveFk&callback=initMap"async defer></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="form.css">
+      <title>Contact Form</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class='bg'></div>
+      <header>
+          <nav>
+              <a href="home.html">Home</a> 
+              <a href="form.html">Form</a> 
+              <a href="map.html">Map</a>
+              <a href="api.html">Trivia</a>
+              <a href="home.html" id='jicon'><i class="fab fa-jenkins" id='logo'> </i> </a>
+              <p id='jenks'> Jenkins </p>
+          </nav>
+      </header>
+      <section class="middle-section">
+            <section class="inner-content">
+                <h1>Get in Touch!</h1>
+                <form id="myForm">
+                    <label for="firstName">
+                            First Name:
+                        </label>
+                        <input name="fN" id="firstName" placeholder="Enter your first name">
+                        <label class="error" for="fistName" id="firstName_error">This field is required.</label>
+                        <label for="lastName">
+                            Last Name:
+                        </label>
+                        <input name="lN" id="lastName" placeholder="Enter your last name">
+                        <label class="error" for="lastName" id="lastName_error">This field is required.</label>
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input name="email" type="email" id="email" placeholder="Enter your email">
+                        <label class="error" for="email" id="email_error">This field is required.</label>
+                        <label for="message">
+                            Message:
+                        </label>
+                        <textarea name="message" id="message" rows="4" cols="50" placeholder="Leave me a note..."></textarea>
+                </form>
+                <input type="submit" class="btn" value="Submit!" onclick="validateForm();">
+                <div class="input-container">
+                    <h4> Your Input: </h4>
+                    <p id='displayName'> </p>
+                    <p id='displayEmail'></p>
+                    <p id='displayMessage'></p>
+                </div>
+                
+            </section>
+        </section>
+
+      <script src = "form.js"></script>
+  </body>
+</html>

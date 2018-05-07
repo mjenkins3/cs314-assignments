@@ -1,0 +1,134 @@
+/*  COLOR SCHEME
+Dark navy 191d32 rgb(25, 29, 50)
+Indigo 282f44 rgb(40, 47, 68);
+Bright Teal d0fef5 rgb(208, 254, 245)
+Maroon 6d3b47 rgb(109, 59, 71)
+Grey 4d5359 rgb(77, 83, 89)*/
+
+
+#map {
+    height: 65%;
+    border: 4px solid rgb(208, 254, 245);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('fonts/montserrat-extralight-webfont.eot');
+    src: url('fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+            url('fonts/montserrat-extralight-webfont.woff') format('woff'),
+            url('fonts/montserrat-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+            url('fonts/montserrat-light-webfont.woff') format('woff'),
+            url('fonts/montserrat-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.eot');
+    src: url('fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+            url('fonts/montserrat-medium-webfont.woff') format('woff'),
+            url('fonts/montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rochesterregular';
+    src: url('fonts/rochester-regular-webfont.eot');
+    src: url('fonts/rochester-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/rochester-regular-webfont.woff2') format('woff2'),
+            url('fonts/rochester-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'montserratextralight', helvetica, sans-serif;
+    background-color: rgb(25, 29, 50);
+}
+
+header {
+    position: relative;
+    /* text-align: center; */
+    background-color: rgb(77, 83, 89);
+    padding: 42px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 20px;
+}
+a:hover {
+    color: rgb(208, 254, 245);
+    text-decoration: underline;
+}
+
+a:clicked {
+    color: white;
+    text-decoration: none;
+}
+
+#jicon {
+    font-size: 2.4em;
+    color: white;
+    font-weight: 200;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    padding: 0;
+}
+
+#jicon:hover {
+    color: rgb(208, 254, 245);
+}
+    
+#jenks {
+    font-family: 'rochesterregular', serif;
+    position: absolute;
+    right: 60px;
+    top: 55px;
+    color: white;
+}
+
+.inner-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: 'montserratlight', sans-serif;
+    color: rgb(208, 254, 245);
+    font-size: 1.8em;
+}
+
+h5 {
+    color: rgb(123, 81, 91);
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'montserratlight', sans-serif;
+    color: rgb(109, 59, 71);
+}
